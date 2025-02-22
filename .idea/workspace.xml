@@ -6,15 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/ValidateSignInPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/ValidateSignInPage.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterSignPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegisterSignPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 16-56-14/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 16-57-56/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 16-58-23/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 16-58-36/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 16-58-56/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 17-00-03/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 17-00-58/Report/Spark.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +73,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Runner (4)">
+  <component name="RunManager" selected="JUnit.Runner (6)">
     <configuration name="Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SITA" />
       <extension name="coverage">
@@ -102,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Runner (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SITA" />
       <extension name="coverage">
         <pattern>
@@ -117,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Runner (5)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SITA" />
       <extension name="coverage">
         <pattern>
@@ -185,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner (4)" />
-        <item itemvalue="JUnit.Runner (3)" />
         <item itemvalue="JUnit.Runner (6)" />
         <item itemvalue="JUnit.Runner (2)" />
         <item itemvalue="JUnit.Runner (1)" />
+        <item itemvalue="JUnit.Runner (5)" />
+        <item itemvalue="JUnit.Runner (4)" />
       </list>
     </recent_temporary>
   </component>

@@ -1,17 +1,26 @@
 package stepDefinitions;
 
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.RegisterSignPage;
+import utility.Utility;
 
 public class RegSignStepDef extends BaseClass {
 
     @Before
     public void setUp() throws InterruptedException {
         openBrowser("chrome");
+
+    }
+
+    @After
+    public void sendReport()
+    {
+        Utility.sendReport();
 
     }
     public  RegisterSignPage rs;
