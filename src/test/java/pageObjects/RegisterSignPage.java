@@ -50,7 +50,7 @@ public class RegisterSignPage {
         String actual = signInPageText.getText();
         String expected = "Sign in with your email address";
         Assert.assertEquals(actual, expected);
-        System.out.println("User able to LOGIN");
+        System.out.println("User can see LOGIN page");
     }
 
     public void getRegistrationText()

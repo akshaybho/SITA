@@ -20,6 +20,7 @@ public class RegSignStepDef extends BaseClass {
     @After
     public void sendReport()
     {
+        driver.quit();
         Utility.sendReport();
 
     }
