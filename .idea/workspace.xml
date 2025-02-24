@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="3rd commit">
-      <change afterPath="$PROJECT_DIR$/Features/RegisterUser.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/RegistrationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegStepDef.java" afterDir="false" />
+    <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="4th commit">
+      <change afterPath="$PROJECT_DIR$/test-output/SparkReport 24-Feb-25 19-06-32/Report/Spark.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/InvalidCredentials.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/InvalidCredentials.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/ValidateSignInPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/ValidateSignInPage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Utility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,13 +225,22 @@
       <option name="project" value="LOCAL" />
       <updated>1740222759727</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4th commit">
+      <option name="closed" value="true" />
+      <created>1740404371519</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740404371519</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="2 commit" />
     <MESSAGE value="3rd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit" />
+    <MESSAGE value="4th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
   </component>
 </project>

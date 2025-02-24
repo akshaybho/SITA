@@ -1,6 +1,9 @@
 package utility;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -11,6 +14,9 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
@@ -119,6 +125,15 @@ public class Utility {
     {
         return RandomStringUtils.randomAlphabetic(6);
     }
+    public static void captureScreenshot(WebDriver driver, String scenarioName) throws IOException {
 
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-mm-yyyy HH:mm");
+        Date now = new Date();
+        String date = sdf.format(now);
+        File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File target = new File("D:\\Cucumber-SITA\\SITA\\screenshot"+date+".png");
+        FileUtils.copyFile(src, target);
 
-}
+    }
+    }
+

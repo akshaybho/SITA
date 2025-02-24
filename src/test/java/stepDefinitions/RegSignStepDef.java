@@ -3,11 +3,14 @@ package stepDefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.RegisterSignPage;
 import utility.Utility;
+
+import java.io.IOException;
 
 public class RegSignStepDef extends BaseClass {
 
@@ -18,8 +21,11 @@ public class RegSignStepDef extends BaseClass {
     }
 
     @After
-    public void sendReport()
-    {
+    public void sendReport(Scenario scenario) throws IOException {
+        if(scenario.isFailed())
+        {
+            Utility.captureScreenshot(driver, scenario.getName());
+        }
         driver.quit();
         Utility.sendReport();
 
