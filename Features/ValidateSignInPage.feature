@@ -7,7 +7,7 @@ Feature: Validate Sign In and Register Button
     When I click on SignIn button
     Then I landed onto SignIn page
 
-    @sanity
+    @sanity @regression
   Scenario: Verify Register button is visible and functional
     Given I click on DIGIHUB on homepage
     Then I should see the Register button

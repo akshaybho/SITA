@@ -1,5 +1,6 @@
 package utility;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -102,5 +103,22 @@ public class Utility {
             e.printStackTrace();
         }
     }
+    public static String generateEmail()
+    {
+        String generatedString = RandomStringUtils.randomAlphanumeric(15);
+
+        return generatedString + "@sita.com";
+    }
+
+    public static String generateName()
+    {
+        return RandomStringUtils.randomAlphabetic(10);
+    }
+
+    public static String lastName()
+    {
+        return RandomStringUtils.randomAlphabetic(6);
+    }
+
 
 }

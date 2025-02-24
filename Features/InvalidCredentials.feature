@@ -6,6 +6,7 @@ Feature: Login with Invalid Credentials
     When I click on SignIn button
     Then I landed onto SignIn page
 
+  @regression
   Scenario Outline: User tries to login with invalid credentials
     Given the user is on the login page
     When the user enters "<username>" and "<password>"

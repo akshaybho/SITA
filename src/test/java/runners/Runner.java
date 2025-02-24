@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions",
         dryRun = false,
         monochrome = true,
-        tags = "@regression or @sanity",
+        tags = "@regression",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
  class Runner {
