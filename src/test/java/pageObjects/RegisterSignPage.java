@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import utility.Utility;
+import waitUtils.WaitUtility;
 
 
 public class RegisterSignPage {
@@ -24,8 +25,10 @@ public class RegisterSignPage {
 
     public void clickdigiHub()
     {
+
         WebElement header = driver.findElement(By.xpath("//header"));
         WebElement digiHubButton = header.findElement(By.xpath("//a[text()='DIGIHUB']"));
+        WaitUtility.waitForElementToBeClickable(driver, digiHubButton, 10);
         digiHubButton.click();
 
     }
