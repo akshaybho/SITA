@@ -13,16 +13,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.Utility;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass  {
     protected static WebDriver driver;
 
-    String url = "https://www.sita.aero/";
-    public void openBrowser(String br) throws InterruptedException {
 
+    public void openBrowser(String br) throws InterruptedException, IOException {
+
+        String baseURL = Utility.readPropertyFiles();
         switch(br)
         {
             case "chrome":
@@ -52,7 +55,7 @@ public class BaseClass  {
                 break;
         }
 
-        driver.get(url);
+        driver.get(baseURL);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         try {

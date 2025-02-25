@@ -13,8 +13,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
@@ -134,6 +133,15 @@ public class Utility {
         File target = new File("D:\\Cucumber-SITA\\SITA\\screenshot"+date+".png");
         FileUtils.copyFile(src, target);
 
+    }
+    public static String readPropertyFiles() throws IOException {
+        String path = "D:\\Cucumber-SITA\\SITA\\src\\test\\resources\\Config.properties";
+        Properties p = new Properties();
+        File file = new File(path);
+        InputStream input = new FileInputStream(file);
+        p.load(input);
+        String url = p.getProperty("URL");
+        return url;
     }
     }
 

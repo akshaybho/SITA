@@ -15,7 +15,7 @@ import java.io.IOException;
 public class RegSignStepDef extends BaseClass {
 
     @Before
-    public void setUp() throws InterruptedException {
+    public void setUp() throws InterruptedException, IOException {
         openBrowser("chrome");
 
     }

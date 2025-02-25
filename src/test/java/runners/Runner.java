@@ -2,7 +2,9 @@ package runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.runner.RunWith;
+import org.testng.annotations.Listeners;
 
 
 @RunWith(Cucumber.class)
@@ -14,6 +16,7 @@ import org.junit.runner.RunWith;
         tags = "@regression",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
- class Runner {
+
+ class Runner extends AbstractTestNGCucumberTests {
 
 }
