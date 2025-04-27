@@ -27,7 +27,7 @@ public class RegSignStepDef extends BaseClass {
             Utility.captureScreenshot(driver, scenario.getName());
         }
         driver.quit();
-        Utility.sendReport();
+        //Utility.sendReport();
 
     }
     public  RegisterSignPage rs;

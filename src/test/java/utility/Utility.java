@@ -6,6 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import javax.mail.*;
@@ -15,10 +16,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import java.io.*;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 public class Utility {
     public static void handlingWindows(WebDriver driver)
@@ -110,9 +108,11 @@ public class Utility {
     }
     public static String generateEmail()
     {
-        String generatedString = RandomStringUtils.randomAlphanumeric(15);
+        String uuid = UUID.randomUUID().toString();
 
-        return generatedString + "@sita.com";
+        String email = "user_"+ uuid.substring(0,8)+"@sita.com";
+
+        return email;
     }
 
     public static String generateName()
@@ -124,24 +124,55 @@ public class Utility {
     {
         return RandomStringUtils.randomAlphabetic(6);
     }
+
     public static void captureScreenshot(WebDriver driver, String scenarioName) throws IOException {
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-mm-yyyy HH:mm");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm");
         Date now = new Date();
         String date = sdf.format(now);
         File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File target = new File("D:\\Cucumber-SITA\\SITA\\screenshot"+date+".png");
+        File target = new File("D:\\Cucumber-SITA\\SITA\\screenshot\\"+scenarioName+" "+date+".png");
         FileUtils.copyFile(src, target);
 
     }
-    public static String readPropertyFiles() throws IOException {
+    public static String readPropertyFiles(String key) throws IOException {
         String path = "D:\\Cucumber-SITA\\SITA\\src\\test\\resources\\Config.properties";
+        String path_1 = "D:\\Cucumber-SITA\\SITA\\src\\test\\resources\\constants.properties";
+
+        String []files = {path, path_1};
         Properties p = new Properties();
-        File file = new File(path);
-        InputStream input = new FileInputStream(file);
-        p.load(input);
-        String url = p.getProperty("URL");
-        return url;
+       // File file = new File(path);
+
+        for(String file : files) {
+            FileInputStream input = new FileInputStream(file);
+            p.load(input);
+            input.close();
+
+        }
+        String values = p.getProperty(key);
+        return values;
     }
+    public static boolean mouseHover(WebDriver driver, WebElement element)
+    {
+        boolean flag = false;
+        try
+        {
+            Actions a = new Actions(driver);
+            a.moveToElement(element).click().build().perform();
+            flag = true;
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return flag;
+    }
+    public static void verifyText(WebElement element) throws IOException {
+        String actualText = element.getText().trim();
+        String expectedText = readPropertyFiles("expectedportText");
+        Assert.assertEquals(expectedText, actualText);
+
+    }
+
     }
 

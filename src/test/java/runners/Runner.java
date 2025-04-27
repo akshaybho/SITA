@@ -12,8 +12,9 @@ import org.testng.annotations.Listeners;
         features = ".//Features",
         glue = "stepDefinitions",
         dryRun = false,
+        publish = true,
         monochrome = true,
-        tags = "@regression",
+        tags = "@smoke",
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 

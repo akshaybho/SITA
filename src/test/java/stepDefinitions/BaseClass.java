@@ -25,7 +25,7 @@ public class BaseClass  {
 
     public void openBrowser(String br) throws InterruptedException, IOException {
 
-        String baseURL = Utility.readPropertyFiles();
+        String baseURL = Utility.readPropertyFiles("URL");
         switch(br)
         {
             case "chrome":

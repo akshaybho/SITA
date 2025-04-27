@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="6th commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/listener/RetryAnalyzer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/waitUtils/WaitUtility.java" afterDir="false" />
+    <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="7th commit">
+      <change afterPath="$PROJECT_DIR$/Features/VerifyLogo.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Rough.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LogoPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LogoStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/constants.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 18-22-20/Report/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 24-Feb-25 19-06-32/Report/Spark.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;akshaybho&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/akshaybho/SITA.git&quot;,
+    &quot;accountId&quot;: &quot;069e3b92-9e19-4ba5-9d47-0ea324fa0e5b&quot;
+  }
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -35,6 +60,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2tIxId3RztPwtSbg2NxRw3NmcVb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -43,36 +71,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Rough.executor": "Run",
+    "Cucumber Java.Feature: DownloadReport.executor": "Run",
+    "Cucumber Java.Feature: InvalidCredentials.executor": "Run",
+    "Cucumber Java.Feature: MouseHoverMenuOptions.executor": "Run",
+    "Cucumber Java.Feature: PortfolioSpoylight.executor": "Run",
+    "Cucumber Java.Feature: RegisterUser.executor": "Run",
+    "Cucumber Java.Feature: VerifyLogo.executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
+    "Cucumber Java.Scenario: User have to download the reports and verify it is downloaded.executor": "Run",
+    "Cucumber Java.Scenario: User needs to download the reports and verify they are downloaded.executor": "Run",
+    "Cucumber Java.Scenario: User verifies logo.executor": "Run",
+    "Cucumber Java.Scenario: Verify portfolio spotlight contains all required portals.executor": "Run",
+    "Cucumber Java.Scenario: verify all menu options in Solution should display correctly.executor": "Run",
+    "JUnit.Runner (1).executor": "Run",
+    "JUnit.Runner (2).executor": "Run",
+    "JUnit.Runner (3).executor": "Run",
+    "JUnit.Runner (4).executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn install" />
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify sign in button is visible and functional">
-    <configuration name="Feature: RegisterUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: VerifyLogo">
+    <configuration name="Feature: VerifyLogo" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/VerifyLogo.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SITA" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: RegisterUser" />
+      <option name="SUGGESTED_NAME" value="Feature: VerifyLogo" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -84,15 +131,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: User tries to register on SITA" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User verifies logo" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/RegisterUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/VerifyLogo.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SITA" />
-      <option name="NAME_FILTER" value="^User tries to register on SITA$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User tries to register on SITA$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User tries to register on SITA" />
+      <option name="NAME_FILTER" value="^User verifies logo$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User verifies logo$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User verifies logo" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -104,47 +151,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify sign in button is visible and functional" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/ValidateSignInPage.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="Runner (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SITA" />
-      <option name="NAME_FILTER" value="^Verify sign in button is visible and functional$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify sign in button is visible and functional$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify sign in button is visible and functional" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/InvalidCredentials.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="Runner (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SITA" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Runner (4)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SITA" />
       <extension name="coverage">
         <pattern>
@@ -197,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Verify sign in button is visible and functional" />
-        <item itemvalue="Cucumber Java.Scenario: " />
-        <item itemvalue="JUnit.Runner (1)" />
-        <item itemvalue="Cucumber Java.Scenario: User tries to register on SITA" />
-        <item itemvalue="Cucumber Java.Feature: RegisterUser" />
+        <item itemvalue="Cucumber Java.Feature: VerifyLogo" />
+        <item itemvalue="Cucumber Java.Scenario: User verifies logo" />
+        <item itemvalue="JUnit.Runner (4)" />
+        <item itemvalue="JUnit.Runner (3)" />
+        <item itemvalue="JUnit.Runner (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +299,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740475802438</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7th commit">
+      <option name="closed" value="true" />
+      <created>1740498113690</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740498113690</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -272,6 +317,7 @@
     <MESSAGE value="4th commit" />
     <MESSAGE value="5th commit" />
     <MESSAGE value="6th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="6th commit" />
+    <MESSAGE value="7th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="7th commit" />
   </component>
 </project>
