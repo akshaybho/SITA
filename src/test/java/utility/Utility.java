@@ -1,5 +1,8 @@
 package utility;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.OutputType;
@@ -19,41 +22,33 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Utility {
-    public static void handlingWindows(WebDriver driver)
-    {
+    public static void handlingWindows(WebDriver driver) {
         String parentWin = driver.getWindowHandle();
 
         Set<String> windows = driver.getWindowHandles();
 
-        Iterator <String> itr = windows.iterator();
-        while(itr.hasNext())
-        {
+        Iterator<String> itr = windows.iterator();
+        while (itr.hasNext()) {
             String childWin = itr.next();
-            if(!parentWin.equals(childWin))
-            {
+            if (!parentWin.equals(childWin)) {
                 driver.switchTo().window(childWin);
             }
         }
     }
-    public static void verifyIfPresent(WebElement element)
-    {
+
+    public static void verifyIfPresent(WebElement element) {
         boolean isPresent = false;
-        try
-        {
-            if(element.isDisplayed())
-            {
+        try {
+            if (element.isDisplayed()) {
                 isPresent = true;
             }
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
-        }
-        finally
-        {
+        } finally {
             Assert.assertTrue(isPresent, "Element is not present");
         }
     }
+
     public static void sendReport() {
         // Sender Email Credentials (Use App Password if Gmail)
         final String senderEmail = "bhogale.aksh11021995@outlook.com";  // Change this
@@ -106,22 +101,20 @@ public class Utility {
             e.printStackTrace();
         }
     }
-    public static String generateEmail()
-    {
+
+    public static String generateEmail() {
         String uuid = UUID.randomUUID().toString();
 
-        String email = "user_"+ uuid.substring(0,8)+"@sita.com";
+        String email = "user_" + uuid.substring(0, 8) + "@sita.com";
 
         return email;
     }
 
-    public static String generateName()
-    {
+    public static String generateName() {
         return RandomStringUtils.randomAlphabetic(10);
     }
 
-    public static String lastName()
-    {
+    public static String lastName() {
         return RandomStringUtils.randomAlphabetic(6);
     }
 
@@ -130,20 +123,21 @@ public class Utility {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm");
         Date now = new Date();
         String date = sdf.format(now);
-        File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        File target = new File("D:\\Cucumber-SITA\\SITA\\screenshot\\"+scenarioName+" "+date+".png");
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File target = new File("D:\\Cucumber-SITA\\SITA\\screenshot\\" + scenarioName + " " + date + ".png");
         FileUtils.copyFile(src, target);
 
     }
+
     public static String readPropertyFiles(String key) throws IOException {
         String path = "D:\\Cucumber-SITA\\SITA\\src\\test\\resources\\Config.properties";
         String path_1 = "D:\\Cucumber-SITA\\SITA\\src\\test\\resources\\constants.properties";
 
-        String []files = {path, path_1};
+        String[] files = {path, path_1};
         Properties p = new Properties();
-       // File file = new File(path);
+        // File file = new File(path);
 
-        for(String file : files) {
+        for (String file : files) {
             FileInputStream input = new FileInputStream(file);
             p.load(input);
             input.close();
@@ -152,21 +146,19 @@ public class Utility {
         String values = p.getProperty(key);
         return values;
     }
-    public static boolean mouseHover(WebDriver driver, WebElement element)
-    {
+
+    public static boolean mouseHover(WebDriver driver, WebElement element) {
         boolean flag = false;
-        try
-        {
+        try {
             Actions a = new Actions(driver);
             a.moveToElement(element).click().build().perform();
             flag = true;
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return flag;
     }
+
     public static void verifyText(WebElement element) throws IOException {
         String actualText = element.getText().trim();
         String expectedText = readPropertyFiles("expectedportText");
@@ -174,5 +166,29 @@ public class Utility {
 
     }
 
+    public static List<String> getListFromJsonArray(String filePath) {
+        List<String> dataList = new ArrayList<>();
+
+        try (FileReader reader = new FileReader(filePath)) {
+            JsonElement fileElement = JsonParser.parseReader(reader);
+
+            if (fileElement.isJsonArray()) {
+                JsonArray ja = fileElement.getAsJsonArray();
+
+                for (JsonElement ele : ja) {
+                    dataList.add(ele.getAsString());
+                }
+            } else {
+                throw new IllegalArgumentException("Provided JSON is not an array");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to read JSON array from file: " + filePath, e);
+        }
+
+        return dataList;
+
     }
+
+}
 

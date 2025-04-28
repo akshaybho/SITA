@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="7th commit">
-      <change afterPath="$PROJECT_DIR$/Features/VerifyLogo.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Rough.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/LogoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/LogoStepDef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/constants.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="afd051ec-9fbf-42cd-b4c1-47cd4a726b9d" name="Changes" comment="8th commit">
+      <change afterPath="$PROJECT_DIR$/Features/PortfolioList.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObjects/PortfolioPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/PortfolioStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/extent.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/RegSignStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utility/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 21-Feb-25 18-22-20/Report/Spark.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/SparkReport 24-Feb-25 19-06-32/Report/Spark.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +69,7 @@
     "Cucumber Java.Feature: DownloadReport.executor": "Run",
     "Cucumber Java.Feature: InvalidCredentials.executor": "Run",
     "Cucumber Java.Feature: MouseHoverMenuOptions.executor": "Run",
+    "Cucumber Java.Feature: PortfolioList.executor": "Run",
     "Cucumber Java.Feature: PortfolioSpoylight.executor": "Run",
     "Cucumber Java.Feature: RegisterUser.executor": "Run",
     "Cucumber Java.Feature: VerifyLogo.executor": "Run",
@@ -85,6 +77,7 @@
     "Cucumber Java.Scenario: User have to download the reports and verify it is downloaded.executor": "Run",
     "Cucumber Java.Scenario: User needs to download the reports and verify they are downloaded.executor": "Run",
     "Cucumber Java.Scenario: User verifies logo.executor": "Run",
+    "Cucumber Java.Scenario: User verifies the portfolio expected list with actual list.executor": "Run",
     "Cucumber Java.Scenario: Verify portfolio spotlight contains all required portals.executor": "Run",
     "Cucumber Java.Scenario: verify all menu options in Solution should display correctly.executor": "Run",
     "JUnit.Runner (1).executor": "Run",
@@ -111,7 +104,26 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: VerifyLogo">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User verifies the portfolio expected list with actual list">
+    <configuration name="Feature: PortfolioList" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/PortfolioList.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SITA" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: PortfolioList" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: VerifyLogo" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/Features/VerifyLogo.feature" />
@@ -151,32 +163,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: User verifies the portfolio expected list with actual list" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/Features/PortfolioList.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SITA" />
+      <option name="NAME_FILTER" value="^User verifies the portfolio expected list with actual list$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User verifies the portfolio expected list with actual list$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User verifies the portfolio expected list with actual list" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="runners.*" />
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Runner (3)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SITA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="runners.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -234,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User verifies the portfolio expected list with actual list" />
+        <item itemvalue="Cucumber Java.Feature: PortfolioList" />
         <item itemvalue="Cucumber Java.Feature: VerifyLogo" />
         <item itemvalue="Cucumber Java.Scenario: User verifies logo" />
         <item itemvalue="JUnit.Runner (4)" />
-        <item itemvalue="JUnit.Runner (3)" />
-        <item itemvalue="JUnit.Runner (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740498113690</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="8th commit">
+      <option name="closed" value="true" />
+      <created>1745732871447</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1745732871447</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -318,6 +328,7 @@
     <MESSAGE value="5th commit" />
     <MESSAGE value="6th commit" />
     <MESSAGE value="7th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="7th commit" />
+    <MESSAGE value="8th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="8th commit" />
   </component>
 </project>
